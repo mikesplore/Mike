@@ -1,24 +1,23 @@
 #include<stdio.h>
 int main(){
-    int x,y;
-    char operation;
-    
-    printf("Enter two numbers separated by a space: ");
-    scanf("%d %d",&x,&y);
+    float x,y;
+    char operation;    
+    printf("Enter two numbers separated by a comma: ");
+    scanf("%f,%f",&x,&y);
     printf("Enter operation (+,-,*,/): ");
     scanf(" %c",&operation);
 
     switch(operation){
         case '+':
-        printf("%d + %d = %d",x,y,x+y);
+        printf("%.4f + %.4f = %.4f",x,y,x+y);
         break;
 
         case '-':
-        printf("%d - %d = %d",x,y,x-y);
+        printf("%.4f - %.4f = %.4f",x,y,x-y);
         break;
 
         case '*':
-        printf("%d * %d = %d",x,y,x*y);
+        printf("%.4f* %.4f = %.4f",x,y,x*y);
         break;
 
         case '/':
@@ -26,8 +25,10 @@ int main(){
             printf("Error division by zero.");
         }
         else{
-        printf("%d/%d=%.f",x,y,(float)x/y);}
+        printf("%.4f/%.4f=%.4f",x,y,x/y);}
         break;
+        
+        
 
         default:
         printf("You have entered wrong operation. Try again.");
