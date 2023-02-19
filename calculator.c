@@ -2,7 +2,7 @@
 int main(){
     int x,y;
     char operation;
-    float sum,difference,product,multiplication,division;
+    
     printf("Enter two numbers separated by a space: ");
     scanf("%d %d",&x,&y);
     printf("Enter operation (+,-,*,/): ");
