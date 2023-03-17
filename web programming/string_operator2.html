@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Operators</h2>
+
+<p>The assignment operator += can concatenate strings.</p>
+
+<p id="demo"></p>
+
+<script>
+txt1 = "What a very ";
+txt1 += "nice day";
+document.getElementById("demo").innerHTML = txt1;
+</script>
+
+</body>
+</html>
