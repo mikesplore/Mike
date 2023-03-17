@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# This file implements the "noautomount" boot option used by Kali's
+# forensic mode to avoid auto-mounting disks which are detected
+# dynamically by udisks
+
+# It is executed through /etc/xdg/autostart/kali-noautomount.desktop
+
+# The downside of this approach is that the setting is overwritten every
+# time that you login in the graphical interface. If you're fed up by this
+# and want to keep automount always disabled, just edit this file and
+# comment everything.
+
+if [ ! -r /proc/cmdline ]; then
+    echo "WARNING: unable to read /proc/cmdline and detect noautomount option" >&2
+    exit 0
+fi
+
+if [ ! -x "$(command -v gsettings 2>/dev/null)" ]; then
+    echo "WARNING: unable to find gsettings needed to disable automount" >&2
+    exit 0
+fi
+
+if grep -q -E "\bnoautomount\b" /proc/cmdline; then
+    echo "INFO: disabling automount as requested by kernel command line" >&2
+    gsettings set org.gnome.desktop.media-handling automount false
+else
+    gsettings set org.gnome.desktop.media-handling automount true
+fi
