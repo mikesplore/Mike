@@ -1,0 +1,46 @@
+table,th,td{
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    border-collapse:collapse;
+    width:550px;
+    height:50px;
+    text-align:center;
+    margin:auto;
+}
+#head{
+    background-color:blueviolet;
+}
+td{
+    background-color:rgb(214, 189, 238)
+}
+
+.title{
+    background-color:rgb(95, 189, 189);
+    width:550px;
+    height:35px;
+    font-size: 30px;
+    border:3px solid black;
+    
+}
+table{
+    border-width:3px;
+}
+.form{
+    width:550px;
+    border:2px solid black;
+    margin:auto;
+    padding:8px;
+    background-color:blueviolet
+}
+#box{
+    border:solid black;
+    border-width: 10px 15px;
+    background-color:grey;
+    margin:auto;
+    padding:8px;
+    width: 100px;
+    height:100px;
+    text-align:left;
+    
+}

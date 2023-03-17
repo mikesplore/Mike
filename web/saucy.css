@@ -1,0 +1,19 @@
+body{
+    background-color:black;
+}
+*{
+    color:aliceblue;
+}
+
+#saucy{
+    background-color: blue;
+    border:2px solid white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: auto;
+    padding:8px;
+    text-align:center;
+}
+.nav{
+    background-color: blue
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Current Time Button</title>
+   </head>
+   <body>
+      <button onclick="displayTime()">Click me!</button>
+      <p id="time"></p>
+
+      <script>
+         function displayTime() {
+            var now = new Date();
+            var timeElement = document.getElementById("time").innerHTML = "The current time is: " + now.toString();
+         }
+      </script>
+   </body>
+</html>

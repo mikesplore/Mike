@@ -1,0 +1,12 @@
+
+p{
+    text-align: justify;
+    border-style: solid;
+    border-color:black;
+    border-width:10px 15px;
+    background-color: grey;
+    padding:30px;
+    
+    width:140px;
+
+}
