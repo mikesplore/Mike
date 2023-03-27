@@ -48,7 +48,7 @@ void returnBook(struct Book books[], int id, struct students student) {
         if (books[i].id == id) {
             if (books[i].borrowed == 1) {
                 books[i].borrowed = 0;
-                printf("Book returned successfully by student %s!\n", student.student_ID);
+                printf("The book has been returned successfully by student %s!\n", student.student_ID);
             } else {
                 printf("Sorry, this book is not currently borrowed.\n");
             }
@@ -89,7 +89,7 @@ int main() {
                 printf("Enter book ID: ");
                 scanf("%d", &books[numBooks].id);
                 books[numBooks].borrowed = 0;
-                printf("Book registered successfully!\n");
+                printf("The book has been registered successfully!\n");
                 numBooks++;
                 break;
             case 2:
